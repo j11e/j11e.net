@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="author" content="JD">
+        <meta name="description" content="j11e.net">
+        <meta name="keywords" content="anonymity,blog,code,cryptography,cv,feminism,linux,privacy,security,travel,web">
+
+        <title></title>
+        <style type="text/css">
+            body {
+                background-color: #F0F0F0;
+                font-family: Helvetica, Arial, sans-serif;
+                line-height: 1.4;
+            }
+
+            h1, h2, h3 {
+                font-weight: 300;
+            }
+
+            .container {
+                padding-top: 20px;
+                margin: 0 auto;
+                width: 800px;
+            }
+
+            .social {
+                text-align: center;
+            }
+            .social a {
+                padding-right: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script type="text/javascript" language="javascript">
+            // <![CDATA[
+            // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+            // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+            // This code is freeware provided these four comment lines remain intact
+            // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+            // adaptation inspired by Pierre Chapuis (https://catwell.info)
+            function generate_email() {
+                var coded = "Dx@Dppo.1ol";
+                var key = "MvjEGuB8lcziyDHeJf6WTkQ3sOo4nAd5Y2bPm071SxURgLVXFrpKw9IZhNatqC";
+                var shift=coded.length;
+                var link="";
+                var ltr="";
+                for (i=0; i<coded.length; i++) {
+                    if (key.indexOf(coded.charAt(i))==-1) {
+                        ltr = coded.charAt(i);
+                        link += (ltr);
+                    } else {
+                        ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;
+                        link += (key.charAt(ltr));
+                    }
+                }
+
+                return link;
+            }
+            //]]>
+        </script>
+
+        </script>
+        <div class="container">
+            <header>
+                <h1>Hi, I'm JD.</h1>
+                <h2>I'm a software engineer with an interest for the web<!-- but not the design part, clearly -->, security, and crypto.<!-- and more, as you can see in the keywords --></h2>
+
+            </header>
+
+            <div class="content">
+                <h3>
+                    I currently live in Brussels and work for <a href="http://alphanetworks.be">Alpha Networks SA</a>. Here are <a href="https://j11e.net/cv.pdf">my resume</a>, <a href="https://blog.j11e.net"> my blog</a>, most of <a href="https://git.j11e.net">my code</a> and my <a href="https://j11e.net/gpg.txt">GPG key</a>. You can e-mail me at
+                    <script type="text/javascript">
+                        // <![CDATA[
+                        var address=generate_email();
+                        document.write("<a href='mailto:"+address+"'>" +address+"</a>.");
+                        // ]]>
+                    </script>
+                    <noscript>an e-mail address that will only appear if you enable JavaScript, sorry :'(</noscript>
+                </h3>
+
+                <h3>
+                    You can also find me on a few social things:
+                </h3>
+
+                <div class="social">
+                    <a href="https://twitter.com/jdinnocenti"><img src="images/twitter.svg" style="width:50px; height:50px"></a>
+                    <a href="https://www.linkedin.com/in/jdinnocenti"><img src="images/linkedin.svg" style="width:50px; height:50px"></a>
+                    <a href="https://github.com/j11e"><img src="images/github.svg" style="width:50px; height:50px"></a>
+                </div>
+            </div>
+
+            <!-- https://crypto.stanford.edu/flashproxy/ for more info. 
+            Currently disabled because the embed isn't working. -->
+            <!-- <iframe src="//crypto.stanford.edu/flashproxy/embed.html" width="80" height="15" frameborder="0" scrolling="no"></iframe> -->
+        </div>
+
+    </body>
+</html>
