@@ -1,0 +1,36 @@
+#canvas, #params, #importexport {
+    border: 1px solid black;
+    float: left;
+    margin-right: 10px;
+}
+
+#counterContainer {
+    display: inline-block;
+}
+
+#params, #importexport {
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+/* 
+uncomment this for the grid to be visible
+.alive, .dead {
+    border: 1px solid grey;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ */
+
+.alive {
+    background-color: black;
+}
+
+.dead {
+    background-color: white;
+}
+
+div, br, strong {
+    display: inline-block;
+}
